@@ -2,6 +2,11 @@
 
 Loss is a numerical metric that describes how wrong a model's predictions are. Loss measures the distance between the model's predictions and the actual labels. The goal of training a model is to minimize the loss, reducing it to its lowest possible value.
 
+> **Related Topics:**
+> * [Linear Regression](Linear_Regression.md) - The model whose predictions we're evaluating
+> * [Gradient Descent](Gradient_Descent.md) - How we minimize loss
+> * [Practical Implementation](Practical_Implementation.md) - Code examples for calculating loss
+
 ### AI-generated Key Takeaways
 * Loss is a numerical value indicating the difference between a model's predictions and the actual values.
 * The goal of model training is to minimize loss, bringing it as close to zero as possible.
@@ -103,16 +108,22 @@ Which of the two linear models shown in the preceding plots has the higher Mean 
   The eight examples on the line incur a total loss of 0. However, although only two points lay off the line, both of those points are twice as far off the line as the outlier points in the left figure. Squared loss amplifies those differences, so an offset of two incurs a loss four times as great as an offset of one: $MSE = \frac{0^2 + 0^2 + 0^2 + 2^2 + 0^2 + 0^2 + 0^2 + 2^2 + 0^2 + 0^2} {10} = 0.8$
 
 ### Key terms:
-* Mean absolute error (MAE)
-* Mean squared error (MSE)
-* L1
-* L2
-* Loss
-* Outlier
-* Prediction
+* [Mean absolute error (MAE)](../Glossary.md#mae-mean-absolute-error)
+* [Mean squared error (MSE)](../Glossary.md#mse-mean-squared-error)
+* [L1 Loss](../Glossary.md#l1-loss)
+* [L2 Loss](../Glossary.md#l2-loss)
+* [Loss](../Glossary.md#loss)
+* [Outlier](../Glossary.md#outlier)
+* [Prediction](../Glossary.md#prediction)
 
 ---
 
-**Previous:** [Linear regression (10 min)](#)
+**Previous:** [Linear Regression](Linear_Regression.md)
 
-**Next:** [Interactive exercise: Parameters (5 min)](#)
+**Next:** [Gradient Descent](Gradient_Descent.md)
+
+**Related:** [Practical Implementation](Practical_Implementation.md) | [Glossary](../Glossary.md) | [Roadmap](../Roadmap.md)
+
+---
+
+<small>Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2025-08-25 UTC.</small>

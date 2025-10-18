@@ -11,7 +11,14 @@ This module introduces linear regression concepts.
 
 > **Prerequisites:**
 > This module assumes you are familiar with the concepts covered in the following module:
-> * Introduction to Machine Learning
+> * [Introduction to Machine Learning](../Introduction%20to%20Machine%20learning/Machine_learning.md)
+> * [Supervised Learning](../Introduction%20to%20Machine%20learning/Supervised_Learning.md)
+
+> **Related Topics:**
+> * [Loss Functions](Loss.md) - How we measure model error
+> * [Gradient Descent](Gradient_Descent.md) - How models learn
+> * [Hyperparameters](Hyperparameter.md) - Configuring training parameters
+> * [Practical Implementation](Practical_Implementation.md) - Code examples and exercises
 
 ![Contextual Image 1](https://developers.google.com/_static/images/icons/spark.svg) **AI-generated Key Takeaways**
 
@@ -118,9 +125,21 @@ What parts of the linear regression equation are updated during training?
   > Feature values are part of the dataset, so they're not updated during training.
 
 ### Key terms:
-* Bias
-* Feature
-* Label
-* Linear regression
-* Parameter
-* Weight
+* [Bias](../Glossary.md#bias)
+* [Feature](../Glossary.md#feature)
+* [Label](../Glossary.md#label)
+* [Linear regression](../Glossary.md#linear-regression)
+* [Parameter](../Glossary.md#parameter)
+* [Weight](../Glossary.md#weight)
+
+***
+
+**Previous:** [Introduction to Machine Learning](../Introduction%20to%20Machine%20learning/Machine_learning.md)
+
+**Next:** [Loss Functions](Loss.md)
+
+**Related:** [Practical Implementation](Practical_Implementation.md) | [Glossary](../Glossary.md) | [Roadmap](../Roadmap.md)
+
+***
+
+<small>Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2025-08-25 UTC.</small>

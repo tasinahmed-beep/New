@@ -2,6 +2,12 @@
 
 Gradient descent is a mathematical technique that iteratively finds the weights and bias that produce the model with the lowest loss. Gradient descent finds the best weight and bias by repeating the following process for a number of user-defined iterations.
 
+> **Related Topics:**
+> * [Loss Functions](Loss.md) - What we're minimizing
+> * [Gradient Descent Calculation](Gradient%20Descent%20Calculation.md) - Detailed mathematical walkthrough
+> * [Hyperparameters](Hyperparameter.md) - Learning rate and other parameters
+> * [Practical Implementation](Practical_Implementation.md) - Code examples
+
 The model begins training with randomized weights and biases near zero, and then repeats the following steps:
 
 *   Calculate the loss with the current weight and bias.
@@ -200,17 +206,19 @@ This would be the best model for this dataset because no other weight and bias v
 
 ### Key terms:
 
-*   Convergence
-*   Convex function
-*   Gradient descent
-*   Iteration
-*   Loss curve
+*   [Convergence](../Glossary.md#convergence)
+*   [Convex function](../Glossary.md#convex-function)
+*   [Gradient descent](../Glossary.md#gradient-descent)
+*   [Iteration](../Glossary.md#iteration)
+*   [Loss curve](../Glossary.md#loss-curve)
 
 ***
 
-**Previous:** Interactive exercise: Parameters (5 min)
+**Previous:** [Loss Functions](Loss.md)
 
-**Next:** Hyperparameters (10 min)
+**Next:** [Hyperparameters](Hyperparameter.md)
+
+**Related:** [Gradient Descent Calculation](Gradient%20Descent%20Calculation.md) | [Practical Implementation](Practical_Implementation.md) | [Glossary](../Glossary.md) | [Roadmap](../Roadmap.md)
 
 ***
 

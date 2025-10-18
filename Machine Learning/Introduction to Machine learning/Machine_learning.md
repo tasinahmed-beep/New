@@ -1,6 +1,12 @@
-# Introduction
+# Introduction to Machine Learning
 
 **Machine learning (ML)**: It is mainly a process to train a model by huge amount of data to make predictions or to generate content like text, image, video etc.
+
+> **Learning Path:**
+> * Start here for ML fundamentals
+> * Continue to [Supervised Learning](Supervised_Learning.md) for detailed concepts
+> * Then explore [Linear Regression](../Linear%20Regression/Linear_Regression.md) for a specific implementation
+> * See the complete [Roadmap](../Roadmap.md) for the full learning journey
 
 ## Example of models
 
@@ -124,3 +130,9 @@ At a high-level, generative models learn patterns in data with the goal to produ
 To produce unique and creative outputs, generative models are initially trained using an **unsupervised** approach, where the model learns to mimic the data it's trained on. The model is sometimes trained further using **supervised** or **reinforcement learning** on specific data related to tasks the model might be asked to perform, for example, summarize an article or edit a photo.
 
 Generative AI is a quickly evolving technology with new use cases constantly being discovered. For example, generative models are helping businesses refine their ecommerce product images by automatically removing distracting backgrounds or improving the quality of low-resolution images.
+
+---
+
+**Next:** [Supervised Learning](Supervised_Learning.md)
+
+**Related:** [Linear Regression](../Linear%20Regression/Linear_Regression.md) | [Glossary](../Glossary.md) | [Roadmap](../Roadmap.md)

@@ -11,6 +11,11 @@
 </ul>
 </aside>
 
+> **Related Topics:**
+> * [Gradient Descent](Gradient_Descent.md) - The optimization process affected by hyperparameters
+> * [Practical Implementation](Practical_Implementation.md) - Code examples for hyperparameter tuning
+> * [Linear Regression](Linear_Regression.md) - The model being trained
+
 Hyperparameters are variables that control different aspects of training. Three common hyperparameters are:
 
 * Learning rate
@@ -111,23 +116,25 @@ The following table describes how batch size and epochs relate to the number of 
   <p>This statement is true. Doubling the learning rate can result in a learning rate that is too large, and therefore cause the weights to "bounce around," increasing the amount of time needed to converge. As always, the best hyperparameters depend on your dataset and available compute resources.</p>
 
 ### Key terms:
-* Batch size
-* Epoch
-* Generalize
-* Hyperparameter
-* Iteration
-* Learning rate
-* Mini-batch
-* Mini-batch stochastic gradient descent
-* Neural network
-* Parameter
-* Stochastic gradient descent
+* [Batch size](../Glossary.md#batch-size)
+* [Epoch](../Glossary.md#epoch)
+* [Generalize](../Glossary.md#generalization)
+* [Hyperparameter](../Glossary.md#hyperparameter)
+* [Iteration](../Glossary.md#iteration)
+* [Learning rate](../Glossary.md#learning-rate)
+* [Mini-batch](../Glossary.md#mini-batch)
+* [Mini-batch stochastic gradient descent](../Glossary.md#mini-batch-gradient-descent)
+* [Neural network](../Glossary.md#neural-network)
+* [Parameter](../Glossary.md#parameter)
+* [Stochastic gradient descent](../Glossary.md#stochastic-gradient-descent-sgd)
 
 ***
 
-**Previous:** Gradient descent (10 min)
+**Previous:** [Gradient Descent](Gradient_Descent.md)
 
-**Next:** Interactive exercise: Gradient descent (5 min)
+**Next:** [Practical Implementation](Practical_Implementation.md)
+
+**Related:** [Glossary](../Glossary.md) | [Roadmap](../Roadmap.md)
 
 ***
 

@@ -2,6 +2,11 @@
 
 Supervised learning's tasks are well-defined and can be applied to a multitude of scenarios—like identifying spam or predicting precipitation.
 
+> **Learning Path:**
+> * Continue from [Introduction to Machine Learning](Machine_learning.md)
+> * Next, explore [Linear Regression](../Linear%20Regression/Linear_Regression.md) for a practical example
+> * See the complete [Roadmap](../Roadmap.md) for the full learning journey
+
  **AI-generated Key Takeaways**
 
 * Supervised learning uses labeled data to train models that predict outcomes for new, unseen data.
@@ -121,19 +126,21 @@ Once we're satisfied with the results from evaluating the model, we can use the 
 
 #### Key Terms:
 
-* example
-* feature
-* inference
-* labeled example
-* label
-* loss
-* prediction
-* training
+* [example](../Glossary.md#example)
+* [feature](../Glossary.md#feature)
+* [inference](../Glossary.md#inference)
+* [labeled example](../Glossary.md#labeled-example)
+* [label](../Glossary.md#label)
+* [loss](../Glossary.md#loss)
+* [prediction](../Glossary.md#prediction)
+* [training](../Glossary.md#training)
 
 ***
 
-**Previous:** What is Machine Learning?
+**Previous:** [Introduction to Machine Learning](Machine_learning.md)
 
-**Next:** Test Your Understanding
+**Next:** [Linear Regression](../Linear%20Regression/Linear_Regression.md)
+
+**Related:** [Glossary](../Glossary.md) | [Roadmap](../Roadmap.md)
 
 *Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates. Last updated 2025-08-25 UTC.*
