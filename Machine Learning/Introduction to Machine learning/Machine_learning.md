@@ -63,3 +63,24 @@ Classification models are divided into two groups: **binary classification** and
 
 - **Binary classification models** output a value from a class that contains only two values, for example, a model that outputs either *rain* or *no rain*.
 - **Multiclass classification models** output a value from a class that contains more than two values, for example, a model that can output either *rain*, *hail*, *snow*, or *sleet*.
+
+
+## Unsupervised learning
+
+**Unsupervised learning** models make predictions by being given data that does not contain any correct answers. An unsupervised learning model's goal is to identify meaningful patterns among the data. In other words, the model has no hints on how to categorize each piece of data, but instead it must infer its own rules.
+
+A commonly used unsupervised learning model employs a technique called **clustering**. The model finds data points that demarcate natural groupings.
+
+![An ML model clustering similar data points.](https://developers.google.com/static/machine-learning/intro-to-ml/images/clustering-02.png)
+*Figure 1. An ML model clustering similar data points.*
+
+![Groups of clusters with natural demarcations.](https://developers.google.com/static/machine-learning/intro-to-ml/images/clustering-04.png)
+*Figure 2. Groups of clusters with natural demarcations.*
+
+Clustering differs from classification because the categories aren't defined by you. For example, an unsupervised model might cluster a weather dataset based on temperature, revealing segmentations that define the seasons. You might then attempt to name those clusters based on your understanding of the dataset.
+
+![An ML model clustering similar weather patterns.](https://developers.google.com/static/machine-learning/intro-to-ml/images/clustering-01.png)
+*Figure 3. An ML model clustering similar weather patterns.*
+
+![Clusters of weather patterns labeled as snow, sleet, rain, and no rain.](https://developers.google.com/static/machine-learning/intro-to-ml/images/clustering-03.png)
+*Figure 4. Clusters of weather patterns labeled as snow, sleet, rain, and no rain.*
