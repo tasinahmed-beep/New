@@ -2,10 +2,10 @@
 
 > **💡 AI-generated Key Takeaways**
 >
-> *   Loss is a numerical value indicating the difference between a model's predictions and the actual values.
-> *   The goal of model training is to minimize loss, bringing it as close to zero as possible.
-> *   Two common methods for calculating loss are Mean Absolute Error (MAE) and Mean Squared Error (MSE), which differ in their sensitivity to outliers.
-> *   Choosing between MAE and MSE depends on the dataset and how you want the model to handle outliers, with MSE penalizing them more heavily.
+> * Loss is a numerical value indicating the difference between a model's predictions and the actual values.
+> * The goal of model training is to minimize loss, bringing it as close to zero as possible.
+> * Two common methods for calculating loss are Mean Absolute Error (MAE) and Mean Squared Error (MSE), which differ in their sensitivity to outliers.
+> * Choosing between MAE and MSE depends on the dataset and how you want the model to handle outliers, with MSE penalizing them more heavily.
 
 Loss is a numerical metric that describes how wrong a model's predictions are. Loss measures the distance between the model's predictions and the actual labels. The goal of training a model is to minimize the loss, reducing it to its lowest possible value.
 
@@ -16,12 +16,12 @@ Figure 8. Loss is measured from the actual value to the predicted value.
 
 ### Distance of loss
 
-In statistics and machine learning, loss measures the difference between the predicted and actual values. Loss focuses on the distance between the values, not the direction. For example, if a model predicts 2, but the actual value is 5, we don't care that the loss is negative ($ 2-5=-3 $). Instead, we care that the distance between the values is $ 3 $. Thus, all methods for calculating loss remove the sign.
+In statistics and machine learning, loss measures the difference between the predicted and actual values. Loss focuses on the distance between the values, not the direction. For example, if a model predicts 2, but the actual value is 5, we don't care that the loss is negative ($2-5=-3$). Instead, we care that the distance between the values is $3$. Thus, all methods for calculating loss remove the sign.
 
 The two most common methods to remove the sign are the following:
 
-*   Take the absolute value of the difference between the actual value and the prediction.
-*   Square the difference between the actual value and the prediction.
+* Take the absolute value of the difference between the actual value and the prediction.
+* Square the difference between the actual value and the prediction.
 
 ### Types of loss
 
@@ -29,11 +29,13 @@ In linear regression, there are five main types of loss, which are outlined in t
 
 | Loss type | Definition | Equation |
 | :--- | :--- | :--- |
-| **L1 loss** | The sum of the absolute values of the difference between the predicted values and the actual values. | $ \sum | actual\ value - predicted\ value | $ |
-| **Mean absolute error (MAE)** | The average of L1 losses across a set of N examples. | $ \frac{1}{N} \sum | actual\ value - predicted\ value | $ |
-| **L2 loss** | The sum of the squared difference between the predicted values and the actual values. | $ \sum(actual\ value - predicted\ value)^2 $ |
-| **Mean squared error (MSE)** | The average of L2 losses across a set of N examples. | $ \frac{1}{N} \sum (actual\ value - predicted\ value)^2 $ |
-| **Root mean squared error (RMSE)** | The square root of the mean squared error (MSE). | $ \sqrt{\frac{1}{N} \sum (actual\ value - predicted\ value)^2} $ |
+| **L1 loss** | The sum of the absolute values of the difference between the predicted values and the actual values. | $\sum_{i=1}^N \lvert y_i-\hat{y}_i\rvert$ |
+| **Mean absolute error (MAE)** | The average of L1 losses across a set of N examples. | $\frac{1}{N}\sum_{i=1}^N \lvert y_i-\hat{y}_i\rvert$ |
+| **L2 loss** | The sum of the squared difference between the predicted values and the actual values. | $\sum_{i=1}^N (y_i-\hat{y}_i)^2$ |
+| **Mean squared error (MSE)** | The average of L2 losses across a set of N examples. | $\frac{1}{N}\sum_{i=1}^N (y_i-\hat{y}_i)^2$ |
+| **Root mean squared error (RMSE)** | The square root of the mean squared error (MSE). | $\sqrt{\frac{1}{N}\sum_{i=1}^N (y_i-\hat{y}_i)^2}$ |
+
+Where $y_i$ is the actual value, $\hat{y}_i$ is the predicted value, and $N$ is the number of examples.
 
 The functional difference between L1 loss and L2 loss (or between MAE/RMSE and MSE) is squaring. When the difference between the prediction and label is large, squaring makes the loss even larger. When the difference is small (less than 1), squaring makes the loss even smaller.
 
@@ -45,17 +47,17 @@ When processing multiple examples at once, we recommend averaging the losses acr
 
 Using the previous best fit line, we'll calculate L2 loss for a single example. From the best fit line, we had the following values for weight and bias:
 
-*   $ \small{Weight: -4.6} $
-*   $ \small{Bias: 34} $
+* Weight: $-4.6$
+* Bias: $34$
 
 If the model predicts that a 2,370-pound car gets 23.1 miles per gallon, but it actually gets 26 miles per gallon, we would calculate the L2 loss as follows:
 **Note:** The formula uses 2.37 because the graphs are scaled to 1000s of pounds
 
 | Value | Equation | Result |
 | :--- | :--- | :--- |
-| Prediction | $ \small{bias + (weight * feature\ value)} \rightarrow \small{34 + (-4.6*2.37)} $ | $ \small{23.1} $ |
-| Actual value | $ \small{ label } $ | $ \small{ 26 } $ |
-| L2 loss | $ \small{ (actual\ value - predicted\ value)^2 } \rightarrow \small{ (26 - 23.1)^2 } $ | $ \small{8.41} $ |
+| Prediction | $34+(-4.6\cdot 2.37)$ | $23.1$ |
+| Actual value | $26$ | $26$ |
+| L2 loss | $(26-23.1)^2$ | $8.41$ |
 
 In this example, the L2 loss for that single data point is 8.41.
 
@@ -75,20 +77,20 @@ Figure 10. A model trained with MAE is farther from the outliers.
 
 Note the relationship between the model and the data:
 
-*   **MSE.** The model is closer to the outliers but further away from most of the other data points.
-*   **MAE.** The model is further away from the outliers but closer to most of the other data points.
+* **MSE.** The model is closer to the outliers but further away from most of the other data points.
+* **MAE.** The model is further away from the outliers but closer to most of the other data points.
 
 > Choose MSE:
 >
-> *   If you want to heavily penalize large errors.
-> *   If you believe the outliers are important and indicative of true data variance that the model should account for.
+> * If you want to heavily penalize large errors.
+> * If you believe the outliers are important and indicative of true data variance that the model should account for.
 >
 > **Note:** The mathematical properties of MSE often make optimization smoother. Root Mean Squared Error (RMSE) is often used to get the error back into the same units as the label.
 >
 > Choose MAE:
 >
-> *   If your dataset has significant outliers that you don't want to overly influence the model. MAE is more robust.
-> *   If you prefer a loss function that is more directly interpretable as the average error magnitude.
+> * If your dataset has significant outliers that you don't want to overly influence the model. MAE is more robust.
+> * If you prefer a loss function that is more directly interpretable as the average error magnitude.
 >
 > In practice, your metric choice can also depend on the specific business problem and what kind of errors are more costly.
 
@@ -101,17 +103,17 @@ Consider the following two plots of a linear model fit to a dataset:
 
 Which of the two linear models shown in the preceding plots has the higher Mean Squared Error (MSE) when evaluated on the plotted data points?
 
-*   The model on the left.
-    The six examples on the line incur a total loss of 0. The four examples not on the line are not very far off the line, so even squaring their offset still yields a low value: $MSE = \frac{0^2 + 1^2 + 0^2 + 1^2 + 0^2 + 1^2 + 0^2 + 1^2 + 0^2 + 0^2} {10} = 0.4$
-*   **The model on the right.**
-    The eight examples on the line incur a total loss of 0. However, although only two points lay off the line, both of those points are twice as far off the line as the outlier points in the left figure. Squared loss amplifies those differences, so an offset of two incurs a loss four times as great as an offset of one: $MSE = \frac{0^2 + 0^2 + 0^2 + 2^2 + 0^2 + 0^2 + 0^2 + 2^2 + 0^2 + 0^2} {10} = 0.8$
+* The model on the left.  
+  The six examples on the line incur a total loss of 0. The four examples not on the line are not very far off the line, so even squaring their offset still yields a low value: $MSE=\frac{0^2+1^2+0^2+1^2+0^2+1^2+0^2+1^2+0^2+0^2}{10}=0.4$
+* **The model on the right.**  
+  The eight examples on the line incur a total loss of 0. However, although only two points lay off the line, both of those points are twice as far off the line as the outlier points in the left figure. Squared loss amplifies those differences, so an offset of two incurs a loss four times as great as an offset of one: $MSE=\frac{0^2+0^2+0^2+2^2+0^2+0^2+0^2+2^2+0^2+0^2}{10}=0.8$
 
 ### Key terms:
 
-*   Mean absolute error (MAE)
-*   Mean squared error (MSE)
-*   L1
-*   L2
-*   Loss
-*   Outlier
-*   Prediction
+* Mean absolute error (MAE)
+* Mean squared error (MSE)
+* L1
+* L2
+* Loss
+* Outlier
+* Prediction
